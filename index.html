@@ -17,7 +17,7 @@
     <header id="app_header" class="d-flex jc-sb ai-c vp-15 hp-30">
 
       <div class="left_header_section d-flex jc-sb ai-c">
-        <i class="fa-brands fa-github fa-2x"></i>
+        <i class="fa-brands fa-github fa-2x hoverable"></i>
         <div class="header_search">
           <input type="search" name="search" id="search" placeholder="Search or jump to...">
           <span>&sol;</span>
@@ -31,13 +31,13 @@
       <!-- /.left_header_section -->
 
       <div class="right_header_section d-flex jc-sb ai-c">
-        <i class="fa-regular fa-bell"></i>
-        <div class="header_add_menu">
-          <i class="fa-solid fa-plus"></i>
+        <i class="fa-regular fa-bell hoverable"></i>
+        <div class="header_add_menu hoverable">
+          <i class="fa-regular fa-plus"></i>
           <i class="fa-solid fa-caret-down fa-xs"></i>
         </div>
-        <div class="header_user_menu">
-          <i class="fa-solid fa-circle"></i>
+        <div class="header_user_menu hoverable">
+          <i class="fa-regular fa-user"></i>
           <i class="fa-solid fa-caret-down fa-xs"></i>
         </div>
       </div>
@@ -47,6 +47,54 @@
     <!-- /#app_header -->
 
     <main id="app_main">
+
+      <div class="tabs">
+        <ul class="d-flex jc-sb ai-c">
+          <li>
+            <div class="overview_tab">
+              <a href="#">
+                <i class="fa-solid fa-book-open"></i>
+                Overview
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="repositories_tab">
+              <a href="#">
+                <i class="fa-solid fa-book"></i>
+                <span>Repositories</span>
+                <span class="counter">28</span>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="projects_tab">
+              <a href="#">
+                <i class="fa-brands fa-microsoft"></i>
+                Projects
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="packages_tab">
+              <a href="#">
+                <i class="fa-solid fa-cube"></i>
+                Packages
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="stars_tab">
+              <a href="#">
+                <i class="fa-solid fa-star"></i>
+                <span>Stars</span>
+                <span class="counter">7</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- /.tabs -->
 
     </main>
     <!-- /#app_main -->

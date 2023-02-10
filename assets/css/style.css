@@ -7,6 +7,8 @@
   --gh-light: #343942;
   --gh-lighter: #f0f6fc;
   --gh-link: #1f6feb;
+  --gh-top-hover: #ffffffb3;
+  --gh-bottom-hover: #1f6febaa;
 }
 
 * {
@@ -80,6 +82,18 @@ a {
   font-weight: 600;
 }
 
+#app_header a,
+#app_header .hoverable {
+  transition: color 0.3s;
+}
+
+#app_header a:hover,
+#app_header .hoverable:hover {
+  color: var(--gh-top-hover);
+  font-weight: 600;
+  cursor: pointer;
+}
+
 .left_header_section > *:nth-child(even),
 .right_header_section > *:nth-child(even) {
   margin: 0 20px;
@@ -121,6 +135,48 @@ a {
 
 /* #region Main */
 
+#app_main .tabs {
+  position: relative;
+  height: 100px;
+  border-bottom: 1px solid var(--gh-medium);
+}
+
+#app_main .tabs > ul {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  list-style: none;
+}
+
+#app_main .tabs > ul > li {
+  padding: 0 0 20px;
+  color: var(--gh-lighter);
+  transition: border-color 0.7s, color 0.7s, padding-left 0.7s, padding-right 0.7s;
+}
+
+#app_main .tabs > ul > li:nth-child(even) {
+  margin: 0 20px;
+}
+
+#app_main .tabs > ul > li:hover {
+  border-bottom: 1px solid orange;
+  font-weight: 600;
+  color: orange;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+}
+
+#app_main .tabs > ul > li > div > a {
+  color: inherit
+}
+
+#app_main .tabs > ul > li > div > a > .counter {
+  padding: 3px 10px;
+  background-color: var(--gh-light);
+  border-radius: 15px;
+}
 
 
 /* #endregion Main */
@@ -154,6 +210,10 @@ a {
 
 #app_footer .footer_links > a:nth-child(even) {
   margin: 0 30px;
+}
+
+#app_footer .footer_links > a:hover {
+  color: var(--gh-bottom-hover);
 }
 
 /* #endregion Footer */
