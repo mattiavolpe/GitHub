@@ -50,8 +50,16 @@ a {
   justify-content: space-between;
 }
 
+.jc-c {
+  justify-content: center;
+}
+
 .ai-c {
   align-items: center;
+}
+
+.ai-fs {
+  align-items: flex-start;
 }
 
 .vp-15 {
@@ -178,6 +186,29 @@ a {
   border-radius: 15px;
 }
 
+#app_main .container > .left_main_section {
+  flex-basis: calc(100% / 3);
+}
+
+#app_main .container > .left_main_section > .image_wrapper {
+  position: relative;
+  top: -40px;
+}
+
+#app_main .container > .left_main_section > .image_wrapper > img {
+  border-radius: 50%;
+}
+
+#app_main .container > .left_main_section > .image_wrapper > span {
+  position: absolute;
+  left: 80%;
+  top: 80%;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: var(--gh-darker);
+  border: 1px solid var(--gh-top-hover);
+  color: var(--gh-top-hover);
+}
 
 /* #endregion Main */
 
