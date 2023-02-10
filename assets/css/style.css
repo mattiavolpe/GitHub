@@ -161,7 +161,7 @@ a {
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translate(-35%, 0);
+  transform: translate(-50%, 0);
   list-style: none;
 }
 
@@ -196,7 +196,8 @@ a {
 }
 
 #app_main .container > .left_main_section {
-  flex-basis: calc(100% / 3);
+  flex-basis: calc(100% / 4);
+  flex-shrink: 0;
   padding: 0 20px;
 }
 
@@ -255,12 +256,20 @@ a {
   flex-grow: 1;
 }
 
-#pinned_header {
+#pinned,
+#contributions,
+#contributions_activity {
+  margin-bottom: 50px;
+}
+
+#pinned_header,
+#contributions_header {
   margin: 20px 0 10px;
   color: var(--gh-top-hover);
 }
 
-#pinned_header > h5 {
+#pinned_header > h5,
+#contributions_header > h5 {
   cursor: pointer;
 }
 
@@ -319,6 +328,65 @@ a {
 
 #pinned_repos > * .language > .js::before {
   background-color: yellow;
+}
+
+#contributions_graph {
+  border: 1px solid var(--gh-light);
+  border-radius: 5px;
+  padding: 30px;
+}
+
+#contributions_graph > .cell {
+  background-color: var(--gh-light);
+  flex-basis: calc(100% / 52);
+  aspect-ratio: 1;
+  border: 1px solid var(--gh-darker);
+  border-radius: 5px;
+}
+
+#contributions_graph > .cell.green {
+  background-color: green;
+}
+
+#contributions_activity {
+  gap: 20px;
+}
+
+#contributions_activity_infos {
+  padding-top: 6px;
+  color: var(--gh-top-hover);
+  flex-grow: 1;
+}
+
+#contributions_infos_container {
+  position: relative;
+  border: 1px solid var(--gh-light);
+  width: calc(100% - 15px);
+  height: 50px;
+  margin: 35px 0 35px 15px;
+}
+
+#contributions_activity_years {
+  flex-basis: 15%;
+  flex-shrink: 0;
+}
+
+#contributions_activity_years > ul {
+  list-style: none;
+  color: var(--gh-lighter);
+}
+
+#contributions_activity_years > ul > li {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 0.875rem;
+}
+
+#contributions_activity_years > ul > li:hover {
+  background-color: var(--gh-link);
+  cursor: pointer;
 }
 
 /* #endregion Main */
