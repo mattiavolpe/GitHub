@@ -188,6 +188,7 @@ a {
 
 #app_main .container > .left_main_section {
   flex-basis: calc(100% / 3);
+  padding: 0 20px;
 }
 
 #app_main .container > .left_main_section > .image_wrapper {
@@ -201,13 +202,14 @@ a {
 
 #app_main .container > .left_main_section > .image_wrapper > span {
   position: absolute;
-  left: 80%;
-  top: 80%;
+  right: 0;
+  top: 75%;
   padding: 10px;
   border-radius: 50%;
   background-color: var(--gh-darker);
   border: 1px solid var(--gh-top-hover);
   color: var(--gh-top-hover);
+  cursor: pointer;
 }
 
 #username,
