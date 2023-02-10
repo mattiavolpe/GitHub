@@ -62,6 +62,14 @@ a {
   align-items: flex-start;
 }
 
+.ai-fe {
+  align-items: flex-end;
+}
+
+.fw-w {
+  flex-wrap: wrap;
+}
+
 .vp-15 {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -153,7 +161,7 @@ a {
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(-35%, 0);
   list-style: none;
 }
 
@@ -164,7 +172,7 @@ a {
 }
 
 #app_main .tabs > ul > li:nth-child(even) {
-  margin: 0 20px;
+  margin: 0 30px;
 }
 
 #app_main .tabs > ul > li:hover {
@@ -182,6 +190,7 @@ a {
 
 #app_main .tabs > ul > li > div > a > .counter {
   padding: 3px 10px;
+  margin-left: 5px;
   background-color: var(--gh-light);
   border-radius: 15px;
 }
@@ -240,6 +249,76 @@ a {
   border-radius: 10px;
   cursor: pointer;
   font-size: 1rem;
+}
+
+#app_main .right_main_section {
+  flex-grow: 1;
+}
+
+#pinned_header {
+  margin: 20px 0 10px;
+  color: var(--gh-top-hover);
+}
+
+#pinned_header > h5 {
+  cursor: pointer;
+}
+
+#pinned_repos {
+  gap: 20px 10px;
+}
+
+#pinned_repos > * {
+  flex-basis: calc(50% - 10px);
+  padding: 20px;
+  border: 1px solid var(--gh-light);
+  border-radius: 5px;
+  color: var(--gh-top-hover);
+}
+
+#pinned_repos > * .pinned_repo_name {
+  margin-bottom: 20px;
+}
+
+#pinned_repos > * .pinned_repo_name > a {
+  margin: 0 10px;
+  color: var(--gh-link);
+  font-weight: 600;
+}
+
+#pinned_repos > * .pinned_repo_name > span {
+  color: var(--gh-light);
+  padding: 2px 7px;
+  border: 1px solid var(--gh-light);
+  border-radius: 20px;
+  font-size: 0.75rem;
+}
+
+#pinned_repos > * .language > span,
+#pinned_repos > * > .pinned_repo_right_section > i {
+  color: var(--gh-light);
+}
+
+
+#pinned_repos > * .language > span::before{
+  display: inline-block;
+  content: '';
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+#pinned_repos > * .language > .css::before {
+  background-color: purple;
+}
+
+#pinned_repos > * .language > .html::before {
+  background-color: orangered;
+}
+
+#pinned_repos > * .language > .js::before {
+  background-color: yellow;
 }
 
 /* #endregion Main */
