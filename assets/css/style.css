@@ -360,10 +360,58 @@ a {
 
 #contributions_infos_container {
   position: relative;
-  border: 1px solid var(--gh-light);
+  border-top: 1px solid var(--gh-light);
+  border-left: 1px solid var(--gh-light);
   width: calc(100% - 15px);
-  height: 50px;
+  height: 200px;
   margin: 35px 0 35px 15px;
+}
+
+#contributions_infos_container > h5 {
+  padding: 10px 20px 10px 0;
+  background-color: var(--gh-darker);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-15px, -50%);
+  color: var(--gh-lighter);
+}
+
+#contributions_infos_container > h5 > span,
+#contributions_infos_container > h3 {
+  color: var(--gh-top-hover);
+}
+
+#contributions_infos_container > h3 > span {
+  display: inline-block;
+  line-height: 30px;
+  width: 30px;
+  text-align: center;
+  background-color: var(--gh-light);
+  border-radius: 50%;
+}
+
+#contributions_infos_container > h3:first-of-type {
+  position: relative;
+  top: 50px;
+  left: -15px;
+}
+
+#contributions_infos_container > h3:nth-of-type(2) {
+  position: relative;
+  top: 110px;
+  left: -15px;
+}
+
+#show_more_activity {
+  height: 40px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--gh-light);
+  background-color: var(--gh-darker);
+  color: var(--gh-link);
+  font-weight: 600;
+  cursor: pointer;
 }
 
 #contributions_activity_years {
