@@ -1,1 +1,1 @@
-# A first, fast try of GitHub profile page emulation #
+# A first, fast try of GitHub user profile page emulation #
