@@ -176,9 +176,9 @@ a {
 }
 
 #app_main .tabs > ul > li:hover {
-  border-bottom: 1px solid orange;
+  border-bottom: 1px solid var(--gh-link);
   font-weight: 600;
-  color: orange;
+  color: var(--gh-link);
   padding-left: 15px;
   padding-right: 15px;
   cursor: pointer;
